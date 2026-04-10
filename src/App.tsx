@@ -10,8 +10,10 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-   <BrowserRouter basename={import.meta.env.BASE_URL}>
-  {/* Your routes here */}
+<BrowserRouter basename="/OpenRoadIO">
+  <Routes>
+    {/* Your routes like /about and /contact go here */}
+  </Routes>
 </BrowserRouter>
       <div className="min-h-screen flex flex-col">
         <Navbar />
