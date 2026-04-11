@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const navLinks = [
   { label: 'Home', to: '/' },
@@ -13,93 +14,37 @@ const navLinks = [
 ];
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
-  const isHome = location.pathname === '/';
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 60);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   useEffect(() => {
     setMobileOpen(false);
   }, [location]);
 
-  const transparent = isHome && !scrolled && !mobileOpen;
-
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        transparent
-          ? 'bg-transparent'
-          : 'bg-cream-100 border-b border-cream-300 shadow-sm'
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
-        <Link
-          to="/"
-          className={`font-serif text-xl tracking-widest transition-colors duration-300 ${
-            transparent ? 'text-cream-100' : 'text-forest-700'
-          }`}
-        >
-          OpenRoadIO
-        </Link>
-
-        <nav className="hidden lg:flex items-center gap-10">
+    <header className="bg-white border-b border-cream-300 sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <Link to="/" className="text-2xl font-bold tracking-tighter italic text-forest-700">OPENROADIO</Link>
+        <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
             <NavLink
               key={link.to}
               to={link.to}
-              end={link.to === '/'}
-              className={({ isActive }) =>
-                `text-xs tracking-widest uppercase font-sans transition-colors duration-200 border-b pb-0.5 ${
-                  transparent
-                    ? isActive
-                      ? 'text-cream-100 border-cream-100'
-                      : 'text-cream-300 border-transparent hover:text-cream-100 hover:border-cream-100'
-                    : isActive
-                    ? 'text-forest-700 border-forest-700'
-                    : 'text-charcoal-500 border-transparent hover:text-forest-700 hover:border-forest-700'
-                }`
-              }
+              className="relative px-2 py-1 text-sm uppercase tracking-widest text-charcoal-600 hover:text-forest-700 transition"
             >
-              {link.label}
+              <motion.span whileHover={{ scale: 1.1 }} className="block">{link.label}</motion.span>
+              <motion.div 
+                className="absolute bottom-0 left-0 h-0.5 bg-forest-700"
+                initial={{ width: 0 }}
+                whileHover={{ width: '100%' }}
+              />
             </NavLink>
           ))}
         </nav>
-
-        <button
-          className={`lg:hidden transition-colors duration-200 ${
-            transparent ? 'text-cream-100' : 'text-charcoal-700'
-          }`}
-          onClick={() => setMobileOpen((v) => !v)}
-          aria-label="Toggle menu"
-        >
-          {mobileOpen ? <X size={22} /> : <Menu size={22} />}
+        <button className="lg:hidden" onClick={() => setMobileOpen(!mobileOpen)}>
+          {mobileOpen ? <X /> : <Menu />}
         </button>
       </div>
-
-      {mobileOpen && (
-        <div className="lg:hidden bg-cream-100 border-t border-cream-300 px-6 py-6 flex flex-col gap-5">
-          {navLinks.map((link) => (
-            <NavLink
-              key={link.to}
-              to={link.to}
-              end={link.to === '/'}
-              className={({ isActive }) =>
-                `text-xs tracking-widest uppercase font-sans transition-colors duration-200 ${
-                  isActive ? 'text-forest-700' : 'text-charcoal-500 hover:text-forest-700'
-                }`
-              }
-            >
-              {link.label}
-            </NavLink>
-          ))}
-        </div>
-      )}
     </header>
   );
 }
