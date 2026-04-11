@@ -24,7 +24,9 @@ export default function Navbar() {
   return (
     <header className="bg-white border-b border-cream-300 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <Link to="/" className="text-2xl font-bold tracking-tighter italic text-forest-700">OPENROADIO</Link>
+        <Link to="/" className="inline-block bg-[#E3541C] text-white px-4 py-1 italic font-black text-2xl tracking-tighter uppercase">
+          OPENROADIO
+        </Link>
         <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
             <NavLink
