@@ -7,6 +7,10 @@ import Beauty from './pages/Beauty';
 import Supplements from './pages/Supplements';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Models from './pages/Models';
+import Rachel from './pages/models/Rachel';
+import Inna from './pages/models/Inna';
+import Gigi from './pages/models/Gigi';
 
 function App() {
   return (
@@ -21,6 +25,10 @@ function App() {
             <Route path="/supplements" element={<Supplements />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/models" element={<Models />} />
+            <Route path="/models/rachel" element={<Rachel />} />
+            <Route path="/models/inna" element={<Inna />} />
+            <Route path="/models/gigi" element={<Gigi />} />
           </Routes>
         </main>
         <Footer />
