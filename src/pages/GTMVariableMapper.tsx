@@ -17,7 +17,7 @@ export default function GTMVariableMapper() {
       </header>
 
       <section className="mb-20">
-        <img src="/gtm-mapper-logo.jpg" alt="GTM Variable Mapper" className="w-full rounded-lg shadow-xl mb-12" />
+        <img src="gtm-mapper-logo.jpg" alt="GTM Variable Mapper" className="w-full rounded-lg shadow-xl mb-12" />
         
         <div className="space-y-8">
           <h2 className="text-3xl font-bold text-gray-900">Why GTM Variable Mapper?</h2>
