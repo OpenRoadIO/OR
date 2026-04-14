@@ -12,6 +12,7 @@ import Rachel from './pages/models/Rachel';
 import Inna from './pages/models/Inna';
 import Gigi from './pages/models/Gigi';
 import GTMVariableMapper from './pages/GTMVariableMapper';
+import GTMDataPrivacy from './GTMDataPrivacy';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/models/rachel-inna" element={<Rachel />} />
             <Route path="/models/gigi" element={<Gigi />} />
             <Route path="/GTMVariableMapper" element={<GTMVariableMapper />} />
+            <Route path="/GTMVariableMapper/privacy" element={<GTMDataPrivacy />} />
           </Routes>
         </main>
         <Footer />
