@@ -13,7 +13,7 @@ import Inna from './pages/models/Inna';
 import Gigi from './pages/models/Gigi';
 import GTMVariableMapper from './pages/GTMVariableMapper';
 import GTMDataPrivacy from './GTMDataPrivacy';
-import GTMDataPrivacy from "./pages/privacy";
+import GTMDataPrivacy from "./pages/privacy.html";
 function App() {
   return (
     <HashRouter>
