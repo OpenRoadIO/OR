@@ -31,13 +31,13 @@ const GTMVariableMapperLanding: React.FC = () => {
         {/* --- SCREENSHOTS SHOWCASE --- */}
         <section className="gtm-showcase">
           <div className="gtm-screenshot-card">
-            {<img src="public/Screenshot 2026-04-15 204626.png" className="gtm-real-screenshot" alt="Mapper UI" /> */}
+            <img src="/mapper-ui.png" className="gtm-real-screenshot" alt="Mapper UI" />
             <div className="gtm-screenshot-placeholder">
               <span>App Interface Screenshot</span>
             </div>
           </div>
           <div className="gtm-screenshot-card offset-card">
-            {/* REPLACE THIS DIV with: <img src="/your-image2.png" className="gtm-real-screenshot" alt="Pro UI" /> */}
+            <img src="/mapper-ui-pro.png" className="gtm-real-screenshot" alt="Pro UI" />
             <div className="gtm-screenshot-placeholder">
               <span>Pro License UI Screenshot</span>
             </div>
