@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // <-- ADD THIS LINE
 import './GTMVariableMapper.css';
-
+import mapperImage from '../assets/mapper-ui.png';
 const GTMVariableMapperLanding: React.FC = () => {
   return (
     <div className="gtm-landing-wrapper">
@@ -84,7 +85,25 @@ const GTMVariableMapperLanding: React.FC = () => {
             Connect on LinkedIn
           </a>
         </section>
+{/* --- PROFILE SECTION --- */}
+        <section className="gtm-profile-section">
+           {/* ... existing profile code ... */}
+        </section>
 
+        {/* 👇 ADD THIS NEW SECTION 👇 */}
+        <footer className="gtm-legal-footer">
+          <Link to="/GTMVariableMapper/privacy" className="gtm-privacy-link">
+            Privacy Policy
+          </Link>
+        </footer>
+        {/* 👆 END OF NEW SECTION 👆 */}
+
+      </main>
+    </div>
+  );
+};
+
+export default GTMVariableMapperLanding;
       </main>
     </div>
   );
