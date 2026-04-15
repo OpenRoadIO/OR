@@ -265,3 +265,14 @@ h1, h2, h3 {
   .offset-card { margin-top: 0; }
   .gtm-bg-glow { width: 100%; }
 }
+/* --- LEGAL / FOOTER SECTION --- */
+.gtm-legal-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.gtm-privacy-link {
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 0.9
