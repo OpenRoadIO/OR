@@ -91,22 +91,15 @@ const GTMVariableMapperLanding: React.FC = () => {
         </section>
 
         {/* 👇 ADD THIS NEW SECTION 👇 */}
-        <footer className="gtm-legal-footer">
+      <footer className="gtm-legal-footer">
           <Link to="/GTMVariableMapper/privacy" className="gtm-privacy-link">
             Privacy Policy
           </Link>
         </footer>
-        {/* 👆 END OF NEW SECTION 👆 */}
 
       </main>
     </div>
   );
 };
 
-export default GTMVariableMapperLanding;
-      </main>
-    </div>
-  );
-};
-
-export default GTMVariableMapperLanding;
+export default GTMVariableMapperLanding; // <-- IT MUST BE DOWN HERE AT THE VERY BOTTOM!
