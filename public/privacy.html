@@ -39,6 +39,24 @@
     }
 
     /* --- Header Section --- */
+    /* --- Navigation --- */
+    .nav {
+      margin-bottom: 40px;
+    }
+
+    .back-btn {
+      color: #9ca3af;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: color 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .back-btn:hover {
+      color: #60a5fa; /* Blue glow */
+    }
     .header {
       margin-bottom: 50px;
       border-bottom: 1px solid #1f2937;
@@ -137,7 +155,11 @@
   </style>
 </head>
 <body>
+  <body>
   <div class="container">
+    <div class="nav">
+      <a href="/OR/GTMVariableMapper" class="back-btn">&larr; Back to Extension</a>
+    </div>
     <div class="header">
       <div class="badge">Legal</div>
       <h1>Privacy <span class="accent">Policy</span></h1>
