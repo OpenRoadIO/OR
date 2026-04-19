@@ -1,6 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-
+// Original import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+//temp redirect
+import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 // -- Components --
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -38,7 +39,9 @@ const AppContent = () => {
       <main className="flex-1">
         <Routes>
           {/* Your Original Routes */}
-          <Route path="/" element={<Home />} />
+          {/*<Route path="/" element={<Home />} />*/}
+          {/* 👇 TEMPORARY REDIRECT 👇 */}
+          <Route path="/" element={<Navigate to="/GTMVariableMapper/privacy" replace />} />
           <Route path="/clothing" element={<Clothing />} />
           <Route path="/beauty" element={<Beauty />} />
           <Route path="/supplements" element={<Supplements />} />
