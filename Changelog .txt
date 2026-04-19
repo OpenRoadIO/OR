@@ -10,6 +10,8 @@ GitHub Pages SPA Support: Deployed a custom 404.html interceptor and an index.ht
 Chrome Web Store Compliance: Engineered a static privacy.html bypass file. This provides a direct, non-JavaScript fallback specifically designed to pass the automated Chrome Web Store validation bot while preserving the stylized React experience for human visitors.
 
 🎨 UI/UX Enhancements
+Updated download button to redirect to chrome store.
+
 Premium Landing Page Overhaul: Redesigned the GTM Variable Mapper landing page with a modern dark-mode aesthetic, featuring glassmorphism feature cards, dynamic hover states, and subtle radial gradient backgrounds.
 
 Chrome Store Integration: Added a prominent, styled call-to-action button featuring an integrated Chrome SVG icon to drive extension downloads.
