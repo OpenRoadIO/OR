@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OpenRoadIO Site Redesign</title>
-    <meta property="og:image" content="https://bolt.new/static/og_default.png" />
+    <title>OpenRoadIO</title>
+    <script type="text/javascript">
+      // Only redirect if they are on the exact root homepage
+      if (window.location.pathname === '/OR/' || window.location.pathname === '/OR/index.html') {
+        window.location.replace('/OR/privacy.html');
+      }
+    </script>
+    <meta property="og:image" content="#" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
     
