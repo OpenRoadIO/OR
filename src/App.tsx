@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
 // -- Components --
 import Navbar from './components/Navbar';
@@ -64,9 +64,9 @@ const AppContent = () => {
 // 2. The main App wraps everything in your HashRouter
 function App() {
   return (
-    <HashRouter>
+    <Router basename="/OR/">
       <AppContent />
-    </HashRouter>
+    </Router>
   );
 }
 
