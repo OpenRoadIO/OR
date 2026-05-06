@@ -1,14 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Privacy Policy</title>
-    <style>
-        body { background-color: #000; color: #fff; font-family: sans-serif; padding: 40px; }
-    </style>
-</head>
-<body>
-    <h1>Privacy Policy for GTM Trigger Studio</h1>
-    <p>This page is successfully loading.</p>
-</body>
-</html>
+<style>
+  .gtm-privacy-container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #334155;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .gtm-privacy-container h1 { 
+    color: #0f172a; 
+    font-size: 2.5rem; 
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px; 
+  }
+  .gtm-privacy-container .effective-date { 
+    color: #64748b; 
+    font-size: 0.95rem; 
+    margin-bottom: 40px; 
+    font-weight: 500; 
+  }
+  .gtm-privacy-container h2 { 
+    color: #0f172a; 
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-bottom: 2px solid #f1f5f9; 
+    padding-bottom: 10px; 
+    margin-top: 40px; 
+    margin-bottom: 16px;
+  }
+  .gtm-privacy-container p { 
+    margin-bottom: 16px; 
+    font-size: 1.05rem;
+  }
+  .gtm-privacy-container ul { 
+    margin-bottom: 24px; 
+    padding-left: 24px; 
+  }
+  .gtm-privacy-container li { 
+    margin-bottom: 10px; 
+    font-size: 1.05rem;
+  }
+  .gtm-privacy-container strong {
+    color: #0f172a;
+    font-weight: 600;
+  }
+  .gtm-privacy-container .highlight { 
+    background: rgba(16, 185, 129, 0.1); 
+    padding: 3px 8px; 
+    border-radius: 6px; 
+    color: #059669; 
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace; 
+    font-size: 0.9em; 
+    font-weight: 600;
+  }
+  .gtm-privacy-container a {
+    color: #10b981;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .gtm-privacy-container a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<div class="gtm-privacy-container">
+  <h1>Privacy Policy for GTM Trigger Studio</h1>
+  <div class="effective-date">Effective Date: May 6, 2026</div>
+
+  <p>This Privacy Policy applies to the <strong>GTM Trigger Studio</strong> Chrome Extension (hereinafter referred to as "the Extension"). We respect your privacy and are committed to protecting it. This policy outlines our practices regarding the handling of data when you use the Extension.</p>
+
+  <h2>1. Information We Do Not Collect</h2>
+  <p>The core functionality of GTM Trigger Studio is to inspect your active browser tab and generate CSS selectors and trigger data for Google Tag Manager. <strong>This process happens entirely locally on your device.</strong></p>
+  <ul>
+    <li>We <strong>do not</strong> collect, transmit, or store any Personally Identifiable Information (PII).</li>
+    <li>We <strong>do not</strong> collect or track your browsing history or web activity.</li>
+    <li>We <strong>do not</strong> track keystrokes, form inputs, or sensitive page content.</li>
+  </ul>
+
+  <h2>2. Permissions and Data Access</h2>
+  <p>To function correctly, the Extension requires the following Chrome permissions, which are strictly used for the Extension's single purpose:</p>
+  <ul>
+    <li><span class="highlight">activeTab</span> &amp; <span class="highlight">scripting</span>: Required to inject the visual inspector interface (crosshairs and tooltips) into the current page and temporarily read the Document Object Model (DOM) to generate accurate CSS selectors when you manually click an element.</li>
+    <li><span class="highlight">storage</span>: Used to save your active/inactive toggle state and securely store your license key locally within your browser.</li>
+  </ul>
+
+  <h2>3. Third-Party Services (License Verification)</h2>
+  <p>The Extension communicates with a single external service: <strong>LemonSqueezy</strong>. When you enter a license key, the Extension sends a secure, encrypted request to <span class="highlight">api.lemonsqueezy.com</span> strictly to verify the validity of your license and unlock premium features. No tracking data or website data is sent to this server.</p>
+
+  <h2>4. Data Sharing and Disclosure</h2>
+  <p>In strict accordance with the Chrome Web Store Developer Program Policies, we certify that:</p>
+  <ul>
+    <li>We <strong>do not sell or transfer</strong> user data to third parties.</li>
+    <li>We <strong>do not use or transfer</strong> user data for purposes unrelated to the Extension's single core purpose.</li>
+    <li>We <strong>do not use or transfer</strong> user data to determine creditworthiness or for lending purposes.</li>
+  </ul>
+
+  <h2>5. Changes to This Privacy Policy</h2>
+  <p>We may update our Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any changes will be reflected on this page with an updated "Effective Date".</p>
+
+  <h2>6. Contact Us</h2>
+  <p>If you have any questions, concerns, or suggestions regarding this Privacy Policy or the GTM Trigger Studio extension, please reach out to us at: <a href="mailto:contact@openroadio.com">contact@openroadio.com</a> <em>(Note: Update this email address to your preferred support email)</em>.</p>
+</div>
