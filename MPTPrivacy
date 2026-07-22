@@ -1,0 +1,126 @@
+<style>
+  /* Wrapper to simulate the Meta/Facebook page background */
+  .meta-privacy-wrapper {
+    background-color: #F0F2F5; /* Meta standard light gray background */
+    padding: 40px 20px;
+    min-height: 100vh;
+    font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  .meta-privacy-container {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 8px; /* Classic Meta card rounding */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05); /* Soft drop shadow */
+    color: #050505; /* Meta primary text color */
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .meta-privacy-container h1 { 
+    color: #050505; 
+    font-size: 2rem; 
+    font-weight: 700;
+    margin-bottom: 8px; 
+    margin-top: 0;
+  }
+
+  .meta-privacy-container .effective-date { 
+    color: #65676B; /* Meta secondary text */
+    font-size: 0.9375rem; 
+    margin-bottom: 32px; 
+    font-weight: 400; 
+  }
+
+  .meta-privacy-container h2 { 
+    color: #050505; 
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-bottom: 1px solid #CED0D4; /* Meta divider color */
+    padding-bottom: 12px; 
+    margin-top: 32px; 
+    margin-bottom: 16px;
+  }
+
+  .meta-privacy-container p { 
+    margin-bottom: 16px; 
+    font-size: 15px; /* Standard Meta body text size */
+  }
+
+  .meta-privacy-container ul { 
+    margin-bottom: 24px; 
+    padding-left: 20px; 
+  }
+
+  .meta-privacy-container li { 
+    margin-bottom: 10px; 
+    font-size: 15px;
+  }
+
+  .meta-privacy-container strong {
+    font-weight: 600;
+  }
+
+  .meta-privacy-container .highlight { 
+    background: #E7F3FF; /* Meta subtle blue highlight */
+    padding: 2px 6px; 
+    border-radius: 4px; 
+    color: #0064E0; /* Meta primary blue */
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; 
+    font-size: 13.5px;
+    font-weight: 500;
+  }
+
+  .meta-privacy-container a {
+    color: #0064E0; /* Meta Link Blue */
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .meta-privacy-container a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<div class="meta-privacy-wrapper">
+  <div class="meta-privacy-container">
+    <h1>Privacy Policy for Meta Pixel Trigger</h1>
+    <div class="effective-date">Effective Date: July 22, 2026</div>
+
+    <p>This Privacy Policy applies to the <strong>Meta Pixel Trigger</strong> Chrome Extension (hereinafter referred to as "the Extension"). We respect your privacy and are committed to protecting it. This policy outlines our practices regarding the handling of data when you use the Extension.</p>
+
+    <h2>1. Information We Do Not Collect</h2>
+    <p>The core functionality of Meta Pixel Trigger is to assist in validating, inspecting, and configuring Meta Pixel events and Conversions API tracking on your active browser tab. <strong>This process happens entirely locally on your device.</strong></p>
+    <ul>
+      <li>We <strong>do not</strong> collect, transmit, or store any Personally Identifiable Information (PII) to our own servers.</li>
+      <li>We <strong>do not</strong> collect or track your browsing history or web activity.</li>
+      <li>We <strong>do not</strong> intercept sensitive page content, form inputs, or user credentials.</li>
+    </ul>
+
+    <h2>2. Permissions and Data Access</h2>
+    <p>To function correctly, the Extension requires the following Chrome permissions, which are strictly used for the Extension's single core purpose:</p>
+    <ul>
+      <li><span class="highlight">activeTab</span> &amp; <span class="highlight">scripting</span>: Required to scan the current page's Document Object Model (DOM) for Meta Pixel base code and event triggers, and to inject the visual helper interface to display pixel firing statuses and validation diagnostics.</li>
+      <li><span class="highlight">storage</span>: Used to securely save your extension preferences (such as your active/inactive toggle state and preferred test event codes) locally within your browser.</li>
+    </ul>
+
+    <h2>3. Third-Party Services</h2>
+    <p>The Extension monitors requests made from your browser to Meta's tracking endpoints (such as <span class="highlight">connect.facebook.net</span> or <span class="highlight">graph.facebook.com</span>) strictly to verify the validity of your pixel implementation and display event data back to you. We do not intermediate this connection, and no tracking data or website data is sent to external servers owned or operated by us.</p>
+
+    <h2>4. Data Sharing and Disclosure</h2>
+    <p>In strict accordance with the Chrome Web Store Developer Program Policies, we certify that:</p>
+    <ul>
+      <li>We <strong>do not sell or transfer</strong> user data to third parties.</li>
+      <li>We <strong>do not use or transfer</strong> user data for purposes unrelated to the Extension's single core purpose.</li>
+      <li>We <strong>do not use or transfer</strong> user data to determine creditworthiness or for lending purposes.</li>
+    </ul>
+
+    <h2>5. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any changes will be reflected on this page with an updated "Effective Date".</p>
+
+    <h2>6. Contact Us</h2>
+    <p>If you have any questions, concerns, or suggestions regarding this Privacy Policy or the Meta Pixel Trigger extension, please reach out to us at: <a href="mailto:contact@openroadio.com">contact@openroadio.com</a>.</p>
+  </div>
+</div>
