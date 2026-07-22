@@ -1,0 +1,109 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500&display=swap');
+
+  .gads-privacy-container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #202124; /* Google standard dark gray */
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .gads-privacy-container h1 { 
+    font-family: 'Google Sans', sans-serif;
+    color: #202124; 
+    font-size: 2.25rem; 
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px; 
+  }
+  .gads-privacy-container .effective-date { 
+    color: #5f6368; /* Google secondary text */
+    font-size: 0.95rem; 
+    margin-bottom: 40px; 
+    font-weight: 400; 
+  }
+  .gads-privacy-container h2 { 
+    font-family: 'Google Sans', sans-serif;
+    color: #1a73e8; /* Google Ads Blue */
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-bottom: 1px solid #dadce0; /* Google standard border */
+    padding-bottom: 10px; 
+    margin-top: 40px; 
+    margin-bottom: 16px;
+  }
+  .gads-privacy-container p { 
+    margin-bottom: 16px; 
+    font-size: 1.05rem;
+  }
+  .gads-privacy-container ul { 
+    margin-bottom: 24px; 
+    padding-left: 24px; 
+  }
+  .gads-privacy-container li { 
+    margin-bottom: 10px; 
+    font-size: 1.05rem;
+  }
+  .gads-privacy-container strong {
+    color: #202124;
+    font-weight: 500;
+  }
+  .gads-privacy-container .highlight { 
+    background: #e8f0fe; /* Google Light Blue background */
+    padding: 3px 8px; 
+    border-radius: 4px; 
+    color: #1967d2; /* Google Dark Blue text */
+    font-family: 'Roboto Mono', ui-monospace, SFMono-Regular, monospace; 
+    font-size: 0.9em; 
+    font-weight: 500;
+  }
+  .gads-privacy-container a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .gads-privacy-container a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<div class="gads-privacy-container">
+  <h1>Privacy Policy for Google Ads Trigger</h1>
+  <div class="effective-date">Effective Date: July 22, 2026</div>
+
+  <p>This Privacy Policy applies to the <strong>Google Ads Trigger</strong> Chrome Extension (hereinafter referred to as "the Extension"). We respect your privacy and are committed to protecting it. This policy outlines our practices regarding the handling of data when you use the Extension.</p>
+
+  <h2>1. Information We Do Not Collect</h2>
+  <p>The core functionality of Google Ads Trigger is to assist in validating, inspecting, and configuring Google Ads conversion tracking tags and remarketing pixels on your active browser tab. <strong>This process happens entirely locally on your device.</strong></p>
+  <ul>
+    <li>We <strong>do not</strong> collect, transmit, or store any Personally Identifiable Information (PII) to our own servers.</li>
+    <li>We <strong>do not</strong> collect or track your browsing history or web activity.</li>
+    <li>We <strong>do not</strong> intercept sensitive page content, form inputs, or user credentials.</li>
+  </ul>
+
+  <h2>2. Permissions and Data Access</h2>
+  <p>To function correctly, the Extension requires the following Chrome permissions, which are strictly used for the Extension's core diagnostic purpose:</p>
+  <ul>
+    <li><span class="highlight">activeTab</span> &amp; <span class="highlight">scripting</span>: Required to scan the current page's Document Object Model (DOM) for Google global site tags (gtag.js) or conversion snippets, and to inject the visual helper interface to display conversion firing statuses.</li>
+    <li><span class="highlight">storage</span>: Used to securely save your extension preferences (such as your active/inactive toggle state and preferred conversion IDs) locally within your browser.</li>
+  </ul>
+
+  <h2>3. Third-Party Services</h2>
+  <p>The Extension monitors requests made from your browser to Google's tracking endpoints (such as <span class="highlight">googleadservices.com</span> or <span class="highlight">google-analytics.com</span>) strictly to verify the validity of your conversion implementation and display real-time event parameters back to you. We do not intermediate this connection, and no tracking data or website data is sent to external servers owned or operated by us.</p>
+
+  <h2>4. Data Sharing and Disclosure</h2>
+  <p>In strict accordance with the Chrome Web Store Developer Program Policies, we certify that:</p>
+  <ul>
+    <li>We <strong>do not sell or transfer</strong> user data to third parties.</li>
+    <li>We <strong>do not use or transfer</strong> user data for purposes unrelated to the Extension's single core purpose.</li>
+    <li>We <strong>do not use or transfer</strong> user data to determine creditworthiness or for lending purposes.</li>
+  </ul>
+
+  <h2>5. Changes to This Privacy Policy</h2>
+  <p>We may update our Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any changes will be reflected on this page with an updated "Effective Date".</p>
+
+  <h2>6. Contact Us</h2>
+  <p>If you have any questions, concerns, or suggestions regarding this Privacy Policy or the Google Ads Trigger extension, please reach out to us at: <a href="mailto:contact@openroadio.com">contact@openroadio.com</a>.</p>
+</div>
