@@ -1,105 +1,136 @@
 <style>
-  .gtm-privacy-container {
-    max-width: 760px;
-    margin: 0 auto;
+  /* Wrapper to simulate the Reddit page background (optional) */
+  .reddit-privacy-wrapper {
+    background-color: #DAE0E6; /* Standard Reddit light gray background */
     padding: 40px 20px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: #334155;
-    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  .reddit-privacy-container {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #1C1C1C; /* Reddit dark text */
+    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
   }
-  .gtm-privacy-container h1 { 
-    color: #0f172a; 
-    font-size: 2.5rem; 
-    font-weight: 800;
-    letter-spacing: -0.5px;
-    margin-bottom: 8px; 
+
+  /* Orange accent bar at the top of the card */
+  .reddit-privacy-container::before {
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: #FF4500; /* Reddit Orange */
+    margin: -40px -40px 40px -40px;
+    border-radius: 4px 4px 0 0;
   }
-  .gtm-privacy-container .effective-date { 
-    color: #64748b; 
-    font-size: 0.95rem; 
-    margin-bottom: 40px; 
+
+  .reddit-privacy-container h1 { 
+    color: #1C1C1C; 
+    font-size: 2.2rem; 
+    font-weight: 700;
+    margin-bottom: 8px; 
+    margin-top: 0;
+  }
+
+  .reddit-privacy-container .effective-date { 
+    color: #787C7E; /* Reddit secondary text */
+    font-size: 0.875rem; 
+    margin-bottom: 32px; 
     font-weight: 500; 
   }
-  .gtm-privacy-container h2 { 
-    color: #0f172a; 
-    font-size: 1.5rem;
-    font-weight: 700;
-    border-bottom: 2px solid #f1f5f9; 
-    padding-bottom: 10px; 
-    margin-top: 40px; 
+
+  .reddit-privacy-container h2 { 
+    color: #1C1C1C; 
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-bottom: 1px solid #EDEFF1; /* Reddit divider color */
+    padding-bottom: 8px; 
+    margin-top: 32px; 
     margin-bottom: 16px;
   }
-  .gtm-privacy-container p { 
+
+  .reddit-privacy-container p { 
     margin-bottom: 16px; 
-    font-size: 1.05rem;
+    font-size: 14px; /* Reddit typically uses smaller body font */
   }
-  .gtm-privacy-container ul { 
+
+  .reddit-privacy-container ul { 
     margin-bottom: 24px; 
-    padding-left: 24px; 
+    padding-left: 20px; 
   }
-  .gtm-privacy-container li { 
+
+  .reddit-privacy-container li { 
     margin-bottom: 10px; 
-    font-size: 1.05rem;
+    font-size: 14px;
   }
-  .gtm-privacy-container strong {
-    color: #0f172a;
+
+  .reddit-privacy-container strong {
     font-weight: 600;
   }
-  .gtm-privacy-container .highlight { 
-    background: rgba(16, 185, 129, 0.1); 
-    padding: 3px 8px; 
-    border-radius: 6px; 
-    color: #059669; 
-    font-family: ui-monospace, SFMono-Regular, Menlo, monospace; 
-    font-size: 0.9em; 
-    font-weight: 600;
+
+  .reddit-privacy-container .highlight { 
+    background: #F6F7F8; 
+    padding: 2px 6px; 
+    border-radius: 4px; 
+    border: 1px solid #EDEFF1;
+    color: #FF4500; /* Reddit Orange for inline code */
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; 
+    font-size: 13px; 
   }
-  .gtm-privacy-container a {
-    color: #10b981;
+
+  .reddit-privacy-container a {
+    color: #0079D3; /* Reddit Link Blue */
     text-decoration: none;
     font-weight: 500;
   }
-  .gtm-privacy-container a:hover {
+
+  .reddit-privacy-container a:hover {
     text-decoration: underline;
   }
 </style>
 
-<div class="gtm-privacy-container">
-  <h1>Privacy Policy for Reddit Pixel Trigger</h1>
-  <div class="effective-date">Effective Date: July 22, 2026</div>
+<div class="reddit-privacy-wrapper">
+  <div class="reddit-privacy-container">
+    <h1>Privacy Policy for Reddit Pixel Trigger</h1>
+    <div class="effective-date">Effective Date: July 22, 2026</div>
 
-  <p>This Privacy Policy applies to the <strong>Reddit Pixel Trigger</strong> Chrome Extension (hereinafter referred to as "the Extension"). We respect your privacy and are committed to protecting it. This policy outlines our practices regarding the handling of data when you use the Extension.</p>
+    <p>This Privacy Policy applies to the <strong>Reddit Pixel Trigger</strong> Chrome Extension (hereinafter referred to as "the Extension"). We respect your privacy and are committed to protecting it. This policy outlines our practices regarding the handling of data when you use the Extension.</p>
 
-  <h2>1. Information We Do Not Collect</h2>
-  <p>The core functionality of Reddit Pixel Trigger is to assist in validating, inspecting, and configuring Reddit Pixel events on your active browser tab. <strong>This process happens entirely locally on your device.</strong></p>
-  <ul>
-    <li>We <strong>do not</strong> collect, transmit, or store any Personally Identifiable Information (PII) to our own servers.</li>
-    <li>We <strong>do not</strong> collect or track your browsing history or web activity.</li>
-    <li>We <strong>do not</strong> intercept sensitive page content, form inputs, or user credentials.</li>
-  </ul>
+    <h2>1. Information We Do Not Collect</h2>
+    <p>The core functionality of Reddit Pixel Trigger is to assist in validating, inspecting, and configuring Reddit Pixel events on your active browser tab. <strong>This process happens entirely locally on your device.</strong></p>
+    <ul>
+      <li>We <strong>do not</strong> collect, transmit, or store any Personally Identifiable Information (PII) to our own servers.</li>
+      <li>We <strong>do not</strong> collect or track your browsing history or web activity.</li>
+      <li>We <strong>do not</strong> intercept sensitive page content, form inputs, or user credentials.</li>
+    </ul>
 
-  <h2>2. Permissions and Data Access</h2>
-  <p>To function correctly, the Extension requires the following Chrome permissions, which are strictly used for the Extension's single core purpose:</p>
-  <ul>
-    <li><span class="highlight">activeTab</span> &amp; <span class="highlight">scripting</span>: Required to scan the current page's Document Object Model (DOM) for Reddit Pixel base code and event triggers, and to inject the visual helper interface to display pixel firing statuses and validation diagnostics.</li>
-    <li><span class="highlight">storage</span>: Used to securely save your extension preferences (such as your active/inactive toggle state) locally within your browser.</li>
-  </ul>
+    <h2>2. Permissions and Data Access</h2>
+    <p>To function correctly, the Extension requires the following Chrome permissions, which are strictly used for the Extension's single core purpose:</p>
+    <ul>
+      <li><span class="highlight">activeTab</span> &amp; <span class="highlight">scripting</span>: Required to scan the current page's Document Object Model (DOM) for Reddit Pixel base code and event triggers, and to inject the visual helper interface to display pixel firing statuses and validation diagnostics.</li>
+      <li><span class="highlight">storage</span>: Used to securely save your extension preferences (such as your active/inactive toggle state) locally within your browser.</li>
+    </ul>
 
-  <h2>3. Third-Party Services</h2>
-  <p>The Extension monitors requests made from your browser to Reddit's tracking endpoints (such as <span class="highlight">alb.reddit.com</span>) strictly to verify the validity of your pixel implementation and display event data back to you. We do not intermediate this connection, and no tracking data or website data is sent to external servers owned or operated by us.</p>
+    <h2>3. Third-Party Services</h2>
+    <p>The Extension monitors requests made from your browser to Reddit's tracking endpoints (such as <span class="highlight">alb.reddit.com</span>) strictly to verify the validity of your pixel implementation and display event data back to you. We do not intermediate this connection, and no tracking data or website data is sent to external servers owned or operated by us.</p>
 
-  <h2>4. Data Sharing and Disclosure</h2>
-  <p>In strict accordance with the Chrome Web Store Developer Program Policies, we certify that:</p>
-  <ul>
-    <li>We <strong>do not sell or transfer</strong> user data to third parties.</li>
-    <li>We <strong>do not use or transfer</strong> user data for purposes unrelated to the Extension's single core purpose.</li>
-    <li>We <strong>do not use or transfer</strong> user data to determine creditworthiness or for lending purposes.</li>
-  </ul>
+    <h2>4. Data Sharing and Disclosure</h2>
+    <p>In strict accordance with the Chrome Web Store Developer Program Policies, we certify that:</p>
+    <ul>
+      <li>We <strong>do not sell or transfer</strong> user data to third parties.</li>
+      <li>We <strong>do not use or transfer</strong> user data for purposes unrelated to the Extension's single core purpose.</li>
+      <li>We <strong>do not use or transfer</strong> user data to determine creditworthiness or for lending purposes.</li>
+    </ul>
 
-  <h2>5. Changes to This Privacy Policy</h2>
-  <p>We may update our Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any changes will be reflected on this page with an updated "Effective Date".</p>
+    <h2>5. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any changes will be reflected on this page with an updated "Effective Date".</p>
 
-  <h2>6. Contact Us</h2>
-  <p>If you have any questions, concerns, or suggestions regarding this Privacy Policy or the Reddit Pixel Trigger extension, please reach out to us at: <a href="mailto:contact@openroadio.com">contact@openroadio.com</a>.</p>
+    <h2>6. Contact Us</h2>
+    <p>If you have any questions, concerns, or suggestions regarding this Privacy Policy or the Reddit Pixel Trigger extension, please reach out to us at: <a href="mailto:contact@openroadio.com">contact@openroadio.com</a>.</p>
+  </div>
 </div>
