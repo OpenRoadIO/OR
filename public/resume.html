@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henri N Singh - Professional Resume</title>
+    <style>
+        /* CSS Styles for Premium Look */
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            border-top: 8px solid #0f2c59; /* Premium Navy Blue Accent */
+        }
+
+        /* Header & Photo Section */
+        .header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+
+        .photo-container {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 4px solid #0f2c59;
+            overflow: hidden;
+            flex-shrink: 0;
+            margin-right: 35px;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header-info h1 {
+            margin: 0;
+            font-size: 38px;
+            color: #0f2c59;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .contact-info {
+            font-size: 15px;
+            color: #666666;
+            margin-top: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        /* Section Headings */
+        h2 {
+            font-size: 18px;
+            color: #0f2c59;
+            text-transform: uppercase;
+            border-bottom: 2px solid #0f2c59;
+            padding-bottom: 5px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        /* General Text */
+        p {
+            font-size: 15px;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-top: 0;
+        }
+
+        li {
+            font-size: 14.5px;
+            margin-bottom: 8px;
+        }
+
+        /* Skills Table Layout */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            row-gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .skill-category {
+            font-weight: 700;
+            color: #111111;
+            font-size: 14.5px;
+        }
+
+        .skill-list {
+            font-size: 14.5px;
+            color: #444444;
+        }
+
+        /* Experience Layout */
+        .job-block {
+            margin-bottom: 25px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+
+        .job-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #111111;
+        }
+
+        .company {
+            font-size: 15px;
+            font-style: italic;
+            color: #555555;
+        }
+
+        .job-date {
+            font-size: 14.5px;
+            font-weight: 700;
+            color: #0f2c59;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .photo-container {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .contact-info {
+                justify-content: center;
+            }
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            .job-header {
+                flex-direction: column;
+            }
+            .job-date {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        
+        <!-- HEADER & PHOTO SECTION -->
+        <header class="header">
+            
+            <!-- ========================================== -->
+            <!-- ADD YOUR PHOTO HERE                        -->
+            <!-- Replace the src URL with your image path   -->
+            <!-- Example: src="my-photo.jpg"                -->
+            <!-- ========================================== -->
+            <div class="photo-container">
+                <img src="https://via.placeholder.com/150" alt="Henri N Singh Professional Headshot">
+            </div>
+
+            <div class="header-info">
+                <h1>Henri N Singh</h1>
+                <div class="contact-info">
+                    <span>Bangalore, KA, 560049</span>
+                    <span>|</span>
+                    <span>+91 7619240248</span>
+                    <span>|</span>
+                    <span>lazaruseffect23@gmail.com</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- PROFESSIONAL SUMMARY -->
+        <section>
+            <h2>Professional Summary</h2>
+            <p>Customer-obsessed Technical Support Professional with over 5 years of experience, including 3+ years specializing in technical customer support for digital marketing tools, Google Ads, and analytics platforms. Proven ability to facilitate high-volume inbound and outbound phone consultations, delivering precise guidance on code implementation, troubleshooting, and campaign optimization. Adept at navigating CMS platforms, utilizing debugging tools, and exceeding client expectations through exceptional phone support etiquette and relationship management.</p>
+        </section>
+
+        <!-- CORE COMPETENCIES & TECHNICAL SKILLS -->
+        <section>
+            <h2>Core Competencies & Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">Digital Marketing & Tags:</div>
+                <div class="skill-list">Google Tag Manager (GTM), Google Ads Basics, Google Analytics (GA4), Google Shopping Campaigns, Global Site Tag, Attribution Models</div>
+                
+                <div class="skill-category">Technical Troubleshooting:</div>
+                <div class="skill-list">Debugging Tools, Search Consoles, Website Maintenance, Windows 11 OS troubleshooting, Root Cause Analysis</div>
+                
+                <div class="skill-category">Web Technologies & CMS:</div>
+                <div class="skill-list">HTML (Basic), JavaScript, CSS/CSS3, PHP exposure, WordPress, Shopify, GitHub Pages web deployment</div>
+                
+                <div class="skill-category">Customer Service & Support:</div>
+                <div class="skill-list">Inbound & Outbound Phone Consultations (6-7 hours/day), Phone Support Etiquette, Client Relationship Management, Multi-channel Support (Email, Chat, Video)</div>
+            </div>
+        </section>
+
+        <!-- PROFESSIONAL EXPERIENCE -->
+        <section>
+            <h2>Professional Experience</h2>
+
+            <div class="job-block">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Senior Consultant – Technical Solutions & Implementation</span><br>
+                        <span class="company">MarketStar Pvt Ltd</span>
+                    </div>
+                    <div class="job-date">Dec 2024 – Present</div>
+                </div>
+                <ul>
+                    <li>Remotely assist global customers in implementing tracking codes and technical solutions for successful setup of digital marketing products via direct installation and GTM.</li>
+                    <li>Facilitate daily phone consultations, video conferencing, and email support, providing step-by-step guidance to advertisers on pre-defined tag implementation techniques.</li>
+                    <li>Utilize developer debugging tools to identify and troubleshoot broken tracking tags, pixel fires, and schema errors, ensuring seamless campaign optimization.</li>
+                    <li>Exceed quality scoring measures and client expectations by maintaining strong communication and professional support etiquette.</li>
+                </ul>
+            </div>
+
+            <div class="job-block">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Technical Solutions Consultant</span><br>
+                        <span class="company">Cognizant India Pvt Ltd</span>
+                    </div>
+                    <div class="job-date">Jun 2023 – Dec 2024</div>
+                </div>
+                <ul>
+                    <li>Guided advertisers through the implementation of Google tag codes (Global Site Tag, GA4) at the backend of websites, assisting with CMS platforms including WordPress and Shopify.</li>
+                    <li>Communicated extensively with webmasters and advertisers via phone and email to troubleshoot missing or misconfigured code for Google Ads and Analytics.</li>
+                    <li>Leveraged Search Consoles and debugging tools to resolve backend technical errors and optimize data flow for digital marketing campaigns.</li>
+                    <li>Prepared detailed diagnostic reports on tracking issues and communicated solutions directly to clients, maintaining high customer satisfaction ratings.</li>
+                </ul>
+            </div>
+
+            <div class="job-block">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Senior Consultant – Web Tagging & Analytics</span><br>
+                        <span class="company">Regalix India Pvt Ltd</span>
+                    </div>
+                    <div class="job-date">Oct 2022 – May 2023</div>
+                </div>
+                <ul>
+                    <li>Executed backend website tag code deployments for Google Ads and Google Analytics accounts, ensuring accurate attribution modeling.</li>
+                    <li>Collaborated directly with advertisers to debug broken conversion triggers and tag dependencies, answering inbound technical queries.</li>
+                    <li>Supported clients in navigating basic HTML, JavaScript, and CSS issues related to their marketing tag integrations.</li>
+                </ul>
+            </div>
+
+            <div class="job-block">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Operations Analyst</span><br>
+                        <span class="company">First Advantage Pvt Ltd</span>
+                    </div>
+                    <div class="job-date">Dec 2021 – Oct 2022</div>
+                </div>
+                <ul>
+                    <li>Managed technical data workflows and conducted background verification processes, liaising directly with US facilities via high-volume outbound phone calls and emails.</li>
+                    <li>Demonstrated strong relationship management by swiftly resolving data discrepancies and retrieving missing reports.</li>
+                </ul>
+            </div>
+
+            <div class="job-block">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Scheduling Coordinator</span><br>
+                        <span class="company">Optum (XL Health)</span>
+                    </div>
+                    <div class="job-date">Feb 2020 – Sep 2021</div>
+                </div>
+                <ul>
+                    <li>Facilitated extensive daily phone consultations, taking live inbound calls to schedule healthcare appointments for US senior citizens.</li>
+                    <li>Maintained strict phone support etiquette, speaking with compassion and empathy to successfully resolve customer inquiries.</li>
+                </ul>
+            </div>
+
+            <div class="job-block">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Business Operations Coordinator</span><br>
+                        <span class="company">United Healthcare (XL Health)</span>
+                    </div>
+                    <div class="job-date">Dec 2018 – Nov 2019</div>
+                </div>
+                <ul>
+                    <li>Executed accurate data entry and indexing of key reporting metrics.</li>
+                    <li>Conducted outbound calls to medical offices to update database information, ensuring strict data integrity.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- KEY PROJECTS & TECHNICAL INITIATIVES -->
+        <section>
+            <h2>Key Projects & Technical Initiatives</h2>
+            <ul>
+                <li><b>GTM Trigger Studio (Browser Extension):</b> Developed a custom browser extension for GTM trigger automation and DataLayer variable mapping, showcasing advanced JavaScript/HTML knowledge and a deep understanding of tag management.</li>
+                <li><b>Web Deployment & Automation Workflows:</b> Actively manage and maintain web development projects hosted via GitHub Pages, utilizing automated workflow systems to orchestrate digital tasks.</li>
+            </ul>
+        </section>
+
+        <!-- HONORS & AWARDS -->
+        <section>
+            <h2>Honors & Awards</h2>
+            <ul>
+                <li><b>Star Performer of the Year</b> – MarketStar (2025)</li>
+                <li><b>Innovator of the Year</b> – MarketStar (2025)</li>
+                <li><b>Aspire Program Completion</b> – Capability Development Program</li>
+            </ul>
+        </section>
+
+        <!-- EDUCATION -->
+        <section>
+            <h2>Education</h2>
+            
+            <div class="job-block" style="margin-bottom: 10px;">
+                <div class="job-header" style="margin-bottom: 2px;">
+                    <div>
+                        <span class="job-title">Bachelor of Science (BSc) in Information Technology</span><br>
+                        <span class="company">Asian Institute of Management & Science (Affiliated with Bharathiar University), Guwahati</span>
+                    </div>
+                    <div class="job-date">2017</div>
+                </div>
+            </div>
+
+            <div class="job-block" style="margin-bottom: 10px;">
+                <div class="job-header" style="margin-bottom: 2px;">
+                    <div>
+                        <span class="job-title">Higher Secondary School Leaving Certificate (HSSLC)</span><br>
+                        <span class="company">Prachya Bharati Academy, AHSEC, Guwahati</span>
+                    </div>
+                    <div class="job-date">2013</div>
+                </div>
+            </div>
+
+            <div class="job-block" style="margin-bottom: 10px;">
+                <div class="job-header" style="margin-bottom: 2px;">
+                    <div>
+                        <span class="job-title">High School Leaving Certificate (HSLC)</span><br>
+                        <span class="company">Ahngjong Mission High School, NBSE, Nagaland</span>
+                    </div>
+                    <div class="job-date">2011</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
